@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 105.708 s <<< FAILURE! - in TestSuite
+testcases.LoginTest.LoginwithInValidCredentials  Time elapsed: 2.006 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at testcases.LoginTest.LoginwithInValidCredentials(LoginTest.java:30)
+
+testcases.RoundTripTest.SearchFlight  Time elapsed: 6.593 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <div class="css-1dbjc4n r-1awozwy r-z2wwpe r-1loqt21 r-18u37iz r-1777fci r-1g94qm0 r-1w50u8q r-ah5dr5 r-1otgn73" data-focusable="true" tabindex="0" data-testid="home-page-flight-cta" style="background-image: linear-gradient(rgb(252, 182, 62), rgb(247, 148, 29)); margin-left: 12px; padding-right: 20px; padding-left: 20px; width: 162px;">...</div> is not clickable at point (452, 521). Other element would receive the click: <div class="css-1dbjc4n">...</div>
+  (Session info: chrome=111.0.5563.110)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f5bb0ce1a1b369005f3a45cc0d3bb71b, clickElement {id=3e79e226-ffdb-4711-90b9-01e30b2da4cb}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.110, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\DIGITA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62328}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62328/devtoo..., se:cdpVersion: 111.0.5563.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f5bb0ce1a1b369005f3a45cc0d3bb71b)] -> xpath: //div[@data-testid='home-page-flight-cta']]
+Session ID: f5bb0ce1a1b369005f3a45cc0d3bb71b
+	at testcases.RoundTripTest.SearchFlight(RoundTripTest.java:19)
+
+testcases.SignupTest.Signup  Time elapsed: 12.88 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at testcases.SignupTest.Signup(SignupTest.java:25)
+
